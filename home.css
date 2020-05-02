@@ -25,7 +25,7 @@ body {
     position: absolute;
     top: 0;
     background-color: #80D6CA;
-    height: 213px;
+    height: 222px;
     z-index: -10;
 
 }
@@ -33,7 +33,7 @@ body {
 #bgColor2{
     width: 100vw;
     position: absolute;
-    top: 213px;
+    top: 222px;
     left: 0;
     height: 100vh;
     background-color: #95CE3D;
