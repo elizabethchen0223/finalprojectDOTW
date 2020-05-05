@@ -4,7 +4,125 @@
 
 body {    
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     text-align: center;
+    background-color: rgb(82, 121, 242);
+}
+
+#wrapper {
+    min-width: 100vw;
+    min-height: 100%;
+}
+
+#container {
+    height: 100vh;
+    position: relative;
+    display:inline-block;
+    margin: auto;
+}
+
+#bg {
+    width: auto;
+    height: 100vh;
+    min-height: 100vh;
+    z-index: -100;
+    min-height: 100%;
+}
+
+#pot {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 15%;
+    z-index: 10;
+}
+
+#plant {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 15%;
+    z-index: 10;
+    animation: grow 1s ease-in-out infinite alternate;
+}
+
+@keyframes grow {
+    from {transform: rotateX(0deg);}
+    to{transform: rotateX(30deg);}
+}
+
+.stars{
+    position: absolute;
+    z-index: 10;
+}
+
+#stars1 {
+    top: 5%;
+    left: 20%;
+    width: 20%;
+}
+
+#white_stars1 {
+    top: 5%;
+    left: 16%;
+    width: 5%;
+}
+
+#white_stars2 {
+    bottom: 5%;
+    right: 13%;
+    width: 5%;
+}
+
+#white_stars3 {
+    top: 5%;
+    right: 13%;
+    width: 5%;
+}
+
+#white_stars4 {
+    bottom: 5%;
+    left: 13%;
+    width: 5%;
+}
+
+#yellow_stars{
+    top: 40%;
+    left: 30%;
+    width: 6%;
+}
+
+#clouds{
+    position: absolute;
+    bottom: 11%;
+    right: 13%;
+    width: 45%;
+    z-index: 15;
+}
+
+#rain {
+    position: absolute;
+    width: 23%;
+    bottom: 40%;
+    right: 26%;
+    z-index: 10;
+}
+
+svg {
+    position: absolute;
+    z-index: 15;
+    bottom: 44%;
+    right: 14%;
+    width: 8%;
+    cursor: pointer;
+    fill: white;
+}
+
+svg:hover, svg:active{
+    fill: #F9CC58;
+}
+
+.hidden {
+    display: none;
 }
 

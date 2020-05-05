@@ -69,16 +69,16 @@ svg {
 /* sunny day background */
 #sunnyday {
     margin-top: 30px;
-    width: 1100px;
+    width: 100%;
     height: 100%;
 }
 
 #plant{
     position: absolute;
-    width: 400px;
+    width: 40%;
     z-index: 100;
-    bottom: 10px;
-    left: 300px;
+    bottom: 2%;
+    left: 28%;
 }
 
 .plantpng {
@@ -102,9 +102,9 @@ svg {
 
 #bubble {
     position: absolute;
-    top: 250px;
-    left: 350px;
-    width: 600px;
+    top: 25%;
+    left: 35%;
+    width: 60%;
     animation: floating 1s ease-in-out infinite alternate, fadeIn 2s;
     transform-origin: bottom;
     z-index: 10;
@@ -116,8 +116,8 @@ p {
     text-align: center;
     color: white;
     font-family: 'Walter Turncoat', cursive;
-    top: 350px;
-    right: 320px;
+    top: 40%;
+    right: 25%;
     z-index: 11;
     animation: expanding 1s ease-in-out infinite alternate, fadeIn 2s;
 }
@@ -162,9 +162,9 @@ p {
 
 #circles {
     position: absolute;
-    width: 300px;
-    bottom: 250px;
-    left: 220px;
+    width: 30%;
+    bottom: 25%;
+    left: 20%;
     animation: circling 1s infinite linear forwards, fadeIn 2s;
     transform-origin: center;
     transform-box: fill-box;
@@ -183,16 +183,16 @@ p {
 /* night panel */
 #space {
     position: absolute;
-    top: 300px;
+    top: 30%;
     right: -1600px;
 }
 
 #plant2 {
     position: absolute;
-    bottom: 100px;
     right: -1450px;
-    width: 400px;
     z-index: 100;
+    width: 40%;
+    bottom: 2%;
 }
 
 #greeting2 {
@@ -203,9 +203,9 @@ p {
 
 #bubble2 {
     position: absolute;
-    top: 150px;
-    right: -1700px;
-    width: 600px;
+    top: 25%;
+    right: -1650px;
+    width: 60%;
     animation: floating 1s ease-in-out infinite alternate, fadeIn 2s;
     transform-origin: bottom;
     z-index: 10;
@@ -214,7 +214,7 @@ p {
 #text2 {
     position: absolute;
     right: -1500px;
-    top: 250px;
+    top: 38%;
     z-index: 100;
     color: white;
 }
