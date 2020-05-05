@@ -1,101 +1,141 @@
-
-*{
-    margin: 0;
-}
-
 body {    
-    width: 100vw;
+    width: 100%;
     height: 100%;
     text-align: center;
 }
 
-/*.greeting {
-    animation: 
-    typing 4.5s steps(30, end),
-    zoom .5s ease-in;
-  }
-  */
-/* hover zoom in */
-
 #container{
-    width: 100%;
-    height: 50%;
-    font-size: 72px;
+    width:100vw;
+    height:100vh;
+    font-size: 200px;
+    font-family: 'Walter Turncoat', cursive;
+    color: white;
     position: relative;
-    background-repeat: no-repeat;
-    background-size:cover;
+
+}
+h2 {
+    position:absolute;
+    top:15%;
+    left:15%;
+    color:white;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 5em;
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    transition: transform .2s;
+    z-index:5;
+  }
+
+.encourage {
+animation: 
+typing 4.5s steps(30, end),
+zoom .5s ease-in;
 }
 
+
 #background{
+
   z-index:-1;
+  background-repeat: no-repeat;
+  width:100%;
+  height:100vh;
+  background-size:cover;
+  position:relative;
+  overflow-y:hidden;
 }
 
 #display{
     position: absolute;
-    width: 100%
-    font-size: 500px;
+    width: 100%;
+    height: 20%;
     text-align:center;
     margin: 0px auto;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+    top:0px;
+    z-index: 5;
+
 }
 
-.buttons{
-    text-align: center;
-}
-/* clock icon */
-/*#clock {
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-}
-
-.clock {
-    transition: transform .2s;
-}
-.clock:hover {
-    transform: scale(1.1);
-}*/
-
-
-/* sunny day background */
 
 #boy{
     position: absolute;
-    left: 50px;
-    bottom: 0px;
-    width: 50px;
-    height: 100%;
-    height: auto;
+    left: 35%;
+    width: auto;
+    height: 40%;
     z-index: 100;
     animation: upanddown 1s linear infinite;
-
+    overflow: hidden;
 }
-
-
-p {
+#boy:hover{
+    transform: scale(1.5);
+}
+#balloon2{
     position: absolute;
+    top: 20%;
+    left: 20%;
+    bottom: 0px;
     width: auto;
-    text-align: center;
-    color: white;
-    font-family: 'Walter Turncoat', cursive;
-    top: 350px;
-    right: 320px;
-    z-index: 11;
-    animation: jogging 1s ease-in-out infinite alternate, fadeIn 2s;
+    height: 20%;
+    z-index: 100;
+    animation: expanding 1s ease-in-out infinite alternate;
+}
+#balloon2:hover{
+    transform:scale(2);
 }
 
+#birds{
+    position:absolute;
+    top:15%;
+    right: 50%;
+    z-index:100;
+    animation: flying 30s ease-in-out infinite alternate;
+
+}
+
+#birds:hover{
+    transform:scale(2);
+
+}
+
+#balloon{
+    position:absolute;
+    top:20%;
+    right:20%;
+    width: 15%;    
+    z-index:100;
+    animation: expanding 1s ease-in-out infinite alternate;
+
+}
+
+#balloon:hover{
+    transform:scale(2);
+
+}
 @keyframes upanddown {
   0%, 100% {
-    bottom: 0;
+    bottom: 0px;
   }
   50% {
-    bottom: 100px;
+    bottom: 75px;
   }
 }
 
-/*.fadeOut {
-    animation: fadeOut 2s;
-}*/
+@keyframes typing {
+    0%,100% { width: 0 }
+    50% { width: 100% }
+}
+
+@keyframes floating {
+    from { transform: rotateX(0deg);}
+    to { transform: rotateX(20deg);}
+}
+
+@keyframes expanding {
+    from { transform: translateY(0px);}
+    to { transform: translateY(50px);}
+}
+
+@keyframes flying {
+    from { transform: translateX(0px);}
+    to { transform: translateX(5000px);}
+}
+
