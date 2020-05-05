@@ -7,7 +7,7 @@ The theme of our project is to convey the feeling of “stuckness” during the 
 <!-- home page layout has changed -->
 The homepage will show a map-like layout of a garden made with SVGs, and 3 individual SVG icons will point to the three other drawings in this project. This interface will serve as a map indicated by different infrastructure, activities in a greenhouse garden that allows the users to transport themselves as if on a virtual tour of a greenhouse garden. 
 
-<!-- first drawing: need to re-write b/c concept changed -->
+<!-- first drawing -->
 The first drawing will show a plant log that document's a plant's health since it arrived at the greenhouse, symbolizing a person's mental health from the start of quarantine. The plant log will document the plant’s state through svg plant drawings and its need for water/sun, its soil quality, etc. This reflects a person’s state during the quarantine, including the frustrations, the difficulties and the need that may arise during this time. This drawing will be implemented using CSS animation and javascript to let the user interact with the animation by scrolling through the page.
 
 <!-- second drawing -->
