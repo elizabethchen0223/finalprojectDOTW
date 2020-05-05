@@ -3,7 +3,7 @@
 <!-- Introduction -->
 The theme of our project is to investigate the feeling of “stuckness” during the quarantine, but not necessarily in an inherently negative or positive light.  The greenhouse is to plants what our homes are to us. In a way, the plants are quarantined for the same purpose that humans are: to protect us from the harsh environmental conditions outside our doors. The current quarantine crisis can be looked at in a way of social isolation, a required condition that spurs on feelings of anxiety, fear, and loneliness. However, a deeper look into the condition of the quarantine can show insight into a journey of physical, mental, and spiritual growth. We hope to invoke a multitude of thoughts during this time.
 
-<!-- home page layout has changed -->
+<!-- home page -->
 The homepage will show a map-like layout of a garden made with SVGs, and 3 individual icons will point to the three other drawings in this project. This interface will serve as a map indicated by different infrastructure, activities in a greenhouse garden that allows the users to transport themselves as if on a virtual tour of a greenhouse garden. We chose this kind of structure because it represents a closed habitat for plants just as our homes have become.  
 
 <!-- first drawing -->
