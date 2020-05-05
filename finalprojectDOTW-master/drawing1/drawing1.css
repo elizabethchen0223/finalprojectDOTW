@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+}
+
+body {    
+    width: 100vw;
+    height: 100%;
+    text-align: center;
+}
+
+
+h2 {
+    padding-top: 30px;
+    width: auto;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 2em;
+    text-align: center;
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    transition: transform .2s;
+    cursor: pointer;
+  }
+
+  .greeting {
+    animation: 
+    typing 4.5s steps(30, end),
+    zoom .5s ease-in;
+  }
+  
+/* hover zoom in */
+h2:hover {
+    transform: scale(1.3);
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#83FCE0,lightskyblue);
+    align-items: center;
+    position: relative;
+}
+
+/* sun icon */
+#sun {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+#morning_panel{
+    position: relative;
+    display:inline-block;
+    overflow: hidden;
+}
+
+/* sunny day background */
+#sunnyday {
+    margin-top: 30px;
+    width: 1100px;
+    height: 100%;
+}
+
+#plant{
+    position: absolute;
+    width: 400px;
+    z-index: 100;
+    bottom: 10px;
+    left: 300px;
+}
+
+.plantpng {
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.plantpng:hover{
+    transform: scale(1.2);
+}
+
+.plantpng:active{
+    animation: blossom 300ms ease-in-out infinite alternate;
+}
+
+@keyframes blossom {
+    0% { transform: rotateZ(0deg);}
+    50% {transform: rotateZ(10deg);}
+    100% { transform: rotateZ(0deg);}
+}
+
+#bubble {
+    position: absolute;
+    top: 250px;
+    left: 350px;
+    width: 600px;
+    animation: floating 1s ease-in-out infinite alternate, fadeIn 2s;
+    transform-origin: bottom;
+    z-index: 10;
+}
+
+p {
+    position: absolute;
+    width: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Walter Turncoat', cursive;
+    top: 350px;
+    right: 320px;
+    z-index: 11;
+    animation: expanding 1s ease-in-out infinite alternate, fadeIn 2s;
+}
+
+.fadeOut {
+    animation: fadeOut 2s;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes expanding {
+    from { transform: translateY(0px);}
+    to { transform: translateY(10px);}
+}
+
+@keyframes floating {
+    from { transform: rotateX(0deg);}
+    to { transform: rotateX(20deg);}
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    } 
+}
+
+#circles {
+    position: absolute;
+    width: 300px;
+    bottom: 250px;
+    left: 220px;
+    animation: circling 1s infinite linear forwards, fadeIn 2s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes circling {
+    from { transform: rotateZ(0deg);}
+    to { transform: rotateZ(360deg);}
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* night panel */
+#space {
+    position: absolute;
+    top: 300px;
+    right: -1600px;
+}
+
+#plant2 {
+    position: absolute;
+    bottom: 100px;
+    right: -1450px;
+    width: 400px;
+    z-index: 100;
+}
+
+#greeting2 {
+    position: absolute;
+    top: 10px;
+    right: -1600px;
+}
+
+#bubble2 {
+    position: absolute;
+    top: 150px;
+    right: -1700px;
+    width: 600px;
+    animation: floating 1s ease-in-out infinite alternate, fadeIn 2s;
+    transform-origin: bottom;
+    z-index: 10;
+}
+
+#text2 {
+    position: absolute;
+    right: -1500px;
+    top: 250px;
+    z-index: 100;
+    color: white;
+}
+
