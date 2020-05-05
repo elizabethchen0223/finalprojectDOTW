@@ -6,5 +6,108 @@ body {
     width: 100vw;
     height: 100vh;
     text-align: center;
+    background-color: rgb(82, 121, 242);
+}
+
+#container {
+    height: 100vh;
+    position: relative;
+    display:inline-block;
+}
+
+#bg {
+    width: auto;
+    height: 100vh;
+    z-index: -100;
+}
+
+#pot {
+    position: absolute;
+    top: 380px;
+    left: 400px;
+    width: 130px;
+    z-index: 10;
+}
+
+#plant {
+    position: absolute;
+    top: 380px;
+    left: 400px;
+    width: 130px;
+    z-index: 10;
+}
+
+.stars{
+    position: absolute;
+    z-index: 10;
+}
+
+#stars1 {
+    top: 10px;
+    left: 200px;
+    width: 200px;
+}
+
+#white_stars1 {
+    top: 50px;
+    left: 200px;
+    width: 200px;
+}
+
+#white_stars2 {
+    bottom: 50px;
+    right: 200px;
+    width: 200px;
+}
+
+#white_stars3 {
+    top: 50px;
+    right: 300px;
+    width: 100px;
+}
+
+#white_stars4 {
+    bottom: 50px;
+    left: 300px;
+    width: 100px;
+}
+
+#yellow_stars{
+    top: 400px;
+    left: 300px;
+    width: 60px;
+}
+
+#clouds{
+    position: absolute;
+    bottom: 110px;
+    right: 130px;
+    width: 380px;
+    z-index: 15;
+}
+
+#rain {
+    position: absolute;
+    width: 225px;
+    bottom: 360px;
+    right: 250px;
+    z-index: 10;
+}
+
+svg {
+    position: absolute;
+    z-index: 15;
+    bottom: 408px;
+    right: 131px;
+    width: 60px;
+    cursor: pointer;
+}
+
+svg:hover, svg:active{
+    fill: #F9CC58;
+}
+
+.hidden {
+    display: none;
 }
 

@@ -48,7 +48,7 @@ draw2.onmouseover = function(){
     audio.play()
 
     setTimeout(() => {
-        title.innerHTML = "Drawing 2"
+        title.innerHTML = "Trail"
         title.classList.remove('hidden')
     }, 200);
 }
@@ -67,7 +67,7 @@ draw3.onmouseover = function(){
     audio.play()
 
     setTimeout(() => {
-        title.innerHTML = "Drawing 3"
+        title.innerHTML = "My Nintendo Plant"
         title.classList.remove('hidden')
     }, 200);
 }
