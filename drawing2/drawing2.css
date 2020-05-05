@@ -7,7 +7,7 @@ body {
 #container{
     width:100vw;
     height:100vh;
-    font-size: 200px;
+    font-size: 75px;
     font-family: 'Walter Turncoat', cursive;
     color: white;
     position: relative;
@@ -16,10 +16,10 @@ body {
 h2 {
     position:absolute;
     top:15%;
-    left:15%;
+    left:37%;
     color:white;
     font-family: 'Walter Turncoat', cursive;
-    font-size: 5em;
+    font-size: 2em;
     margin: 0 auto; 
     letter-spacing: .15em;
     transition: transform .2s;
@@ -70,13 +70,13 @@ zoom .5s ease-in;
 }
 #balloon2{
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 20%;
     bottom: 0px;
     width: auto;
     height: 20%;
     z-index: 100;
-    animation: expanding 1s ease-in-out infinite alternate;
+    animation: expanding 5s ease-in-out infinite alternate;
 }
 #balloon2:hover{
     transform:scale(2);
@@ -84,10 +84,13 @@ zoom .5s ease-in;
 
 #birds{
     position:absolute;
-    top:15%;
-    right: 50%;
+    top:5%;
+    right: 30%;
     z-index:100;
-    animation: flying 30s ease-in-out infinite alternate;
+    animation: flying 30s linear infinite;
+    opacity: .7;
+    width: 8%;
+    height: 12%;
 
 }
 
@@ -98,11 +101,13 @@ zoom .5s ease-in;
 
 #balloon{
     position:absolute;
-    top:20%;
+    top:15%;
+    width: 15%;
+    height:20%;
     right:20%;
     width: 15%;    
     z-index:100;
-    animation: expanding 1s ease-in-out infinite alternate;
+    animation: expanding 4s ease-in-out infinite alternate;
 
 }
 
@@ -115,7 +120,7 @@ zoom .5s ease-in;
     bottom: 0px;
   }
   50% {
-    bottom: 75px;
+    bottom: 50px;
   }
 }
 
@@ -135,7 +140,7 @@ zoom .5s ease-in;
 }
 
 @keyframes flying {
-    from { transform: translateX(0px);}
-    to { transform: translateX(5000px);}
+    from { transform: translateX(1200px);}
+    to { transform: translateX(-1200px);}
 }
 
